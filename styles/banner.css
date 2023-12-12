@@ -1,0 +1,56 @@
+.bannerPrincipal{
+    text-align: center;
+    padding: 2.5em 2em; 
+    background: var(--cor-opcoes);
+    color: var(--branco); 
+    
+}
+.bannerTexto{
+    margin: 1em 0 ;
+    font-weight: 500;
+    font-family: var(--fonte-primaria);
+}
+.bannerTitulo{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--fonte-primaria);
+}
+.bannerBotao{
+    border-radius: 26px;
+    background-color: transparent;
+    border: 2px solid var(--branco);
+    color: var(--branco);
+    padding: 1em;
+    width: 100%;
+}
+.bannerBotao::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--branco);
+    text-align: center;
+    background: url("../img/Pesquisa.svg") no-repeat;
+    background-position: 1em;
+
+}
+@media screen and (min-width: 1024px ){
+    .bannerBotao{
+        width: 40%;
+    }
+    .bannerBotao::placeholder{
+        background-position: 3em;
+    }
+    .bannerTitulo{
+        font-size: 36px;
+    }
+}
+@media screen and (min-width: 1728px) {
+    .bannerBotao{
+        width: 35%;
+    }
+    .bannerBotao::placeholder{
+        background-position: 11em;
+    }
+    .bannerPrincipal{
+        padding: 6em 0;
+    }
+}
